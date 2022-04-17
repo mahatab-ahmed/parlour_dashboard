@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Slab:wght@400;600&display=swap');
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #659DBD;
+    --brand: rgba(9, 174, 239, 0.9);
+    --white: #fff;
+}
+
+body {
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+a {
+    color: var(--body);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    /* font-weight: 600; */
+}
+
+a:hover {
+    color: rgb(2, 181, 252);
+}
+
+.link-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.link-more .icon {
+    transition: 0.3s ease-in-out;
+}
+
+.link-more:hover .icon {
+    transform: translateX(8px);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+}
+
+
+/*intro*/
+
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro h1 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6 {
+    color: var(--brand);
+}
+
+.intro p {
+    max-width: 500px;
+    margin: auto;
+}
+
+.cta-btns {
+    margin-top: 60px;
+}
+
+
+/*intro*/
+
+
+/*Navbar*/
+
+.navbar {
+    background: linear-gradient(to bottom, #181f34, rgba(27, 31, 52, 0.05))
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    font-size: 32px;
+}
+
+
+/*Hero*/
+
+#hero {
+    background: linear-gradient(to left, #181f34, rgba(27, 31, 52, 0.0)), url("/Images/1.jpeg");
+    min-height: 100vh;
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+}
+
+#hero p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+
+/*Button*/
+
+.btn {
+    padding: 14px 36px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 14px;
+    border-radius: 25px;
+    outline: none;
+    /* border: none; */
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+}
+
+
+/*About*/
+
+#about {
+    position: relative;
+}
+
+#about::after {
+    content: '';
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6 {
+    color: var(--brand);
+}
+
+#about h1 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+
+/*services*/
+
+#services {
+    background-color: var(--bg2);
+}
+
+#services .service .content {
+    padding: 32px;
+}
+
+#services .service p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+
+/*milestone*/
+
+#milestone {
+    background: linear-gradient(to left, #181f34, rgba(27, 31, 52, 0.0)), url("/Images/1.jpeg");
+    /* min-height: 100vh; */
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+}
+
+#milestone h1 {
+    color: var(--brand);
+}
+
+
+/*milestone*/
+
+
+/*Feature*/
+
+.feature {
+    display: flex;
+}
+
+.feature .icon-feature {
+    font-size: 32px;
+    color: var(--brand);
+    line-height: 1;
+    margin-right: 16px;
+}
+
+.feature p {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+/*Feature*/
+
+
+/*team*/
+
+#team {
+    background-color: var(--bg2);
+}
+
+.social-link a {
+    width: 42px;
+    height: 42px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link a:hover {
+    background-color: var(--brand);
+    color: var(--bg2);
+}
+
+.team-member {
+    position: relative;
+}
+
+.team-member .social-link {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .social-link {
+    opacity: 1;
+    top: 30px;
+}
+
+
+/*Reviews*/
+
+#reviews {
+    background-color: var(--bg1);
+}
+
+.review {
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review .icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--bg1);
+    border-radius: 100px;
+    position: absolute;
+    right: 52px;
+}
